@@ -1,0 +1,24 @@
+<section class="form">
+    <h3>
+    Explore the world of wine with your own personal sommelier. 
+    Discover exciting, sustainable wines and stories of people who make them.
+    </h3>
+
+	<p>Leave us your email and we'll keep you informed</p>
+
+<?php
+
+$form = $this->form;
+$form->prepare();
+
+echo $this->flashMessenger()->render('info');
+echo $this->flashMessenger()->render('success');
+echo $this->formElementErrors($form->get('email'), array('class' => 'error'));
+
+echo $this->form()->openTag($form);
+echo $this->formRow($form->get('email'));
+echo $this->formRow($form->get('submit'));
+echo $this->form()->closeTag();
+
+?>
+</section>

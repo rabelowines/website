@@ -1,0 +1,12 @@
+wedding:
+  image: rabelowines/website
+  ports:
+    - "80:80"
+  environment:
+    VIRTUAL_HOST: rabelowines.com,www.rabelowines.com
+    VIRTUAL_HOST_WEIGHT: 100
+  tags:
+    - web
+    - rabelowines
+  deployment_strategy: high_availability
+  restart: always

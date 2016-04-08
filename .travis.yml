@@ -1,0 +1,7 @@
+language: php
+php:
+  - '7.0'
+
+install: cd src && ./composer.phar install && cd -
+
+script: cd src && ./vendor/bin/phpunit && cd -

@@ -1,0 +1,90 @@
+html { min-height: 100%; }
+h1 { font-size: 2.4em;  font-weight: 500; margin: 0; }
+h2 { font-size: 1.85px; }
+h3 { font-size: 1.75em; font-weight: 300; line-height: 1.2; margin: 20px 40px; }
+p { font-size: 0.9em; font-weight: 200;}
+
+body {  
+  background: url("../img/hero.enhanced.jpg") no-repeat 100% 100%;
+  background-size: cover;
+  box-shadow: inset 10px 10px 10em 1em rgba(0,0,0,0.35);
+  display: block;
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 40px 20px;
+  /*left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;*/
+  z-index: 1;
+}
+
+main {
+  /*position: relative;
+  left: 0;
+  right: 0;
+  z-index: 9999;*/
+  display: block;
+  max-width: 780px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+header, section {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  background-color: rgba(30, 30, 30, 0.95);
+  color: #fff;
+  padding: 30px;
+}
+
+main > header {
+  border-radius: 0;
+  display: inline-block;
+  padding: 18px;
+}
+
+main > header > span {
+  display: block;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+section { margin-top: 20px; }
+
+.form { text-align: center; padding: 20px 0 40px 0; }
+
+.error { color: red; }
+
+.form ul.success { color: #74c120; }
+
+form label span { display: none; }
+
+section p:last-child { margin-bottom: 0; }
+
+input[type=email] {
+  font-size: 1.2em;
+  padding: 0.6em 1em;
+  background-color: #545454;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #fafdff;
+  border-radius: 2px;
+  border: none;
+}
+
+#submitbutton {
+  font-size: 1.2em;
+  margin-left: 0.6em;
+  padding: 0.6em 1em;
+  background: #74c120;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #fafdff;
+  border-radius: 2px;
+  border: none;
+  text-transform: uppercase;
+}
+#submitbutton:hover, #submitbutton:active { background: #5c9a19; }

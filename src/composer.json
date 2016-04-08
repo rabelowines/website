@@ -1,0 +1,10 @@
+{
+    "name": "rabelowines/website",
+    "description": "Rabelo Wines Website",
+    "homepage": "http://rabelowines.com/",
+    "require": {
+        "zendframework/zendframework": "^2.5",
+        "phpunit/phpunit": "^4.6",
+        "mailchimp/mailchimp": "^2.0"
+    }
+}
