@@ -16,3 +16,4 @@ WORKDIR /var/www/
 # --prefer-source fixes issues with download limits on Github.
 # --no-interaction makes sure composer can run fully automated
 RUN composer install --prefer-source --no-interaction
+RUN chmod 777 /var/www/data/cache
