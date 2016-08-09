@@ -1,4 +1,4 @@
-FROM php:7.0.5-apache
+FROM php:7.0.9-apache
 MAINTAINER Matt Oddie <docker@mattoddie.com>
 
 RUN apt-get update && \
